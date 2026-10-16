@@ -1,0 +1,16 @@
+{
+  "name": "clone_tab_news",
+  "version": "1.0.0",
+  "description": "Um projeto de clone do tab news para aprender de fora a fora como criar um sistema igual ao tab news",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
