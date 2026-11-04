@@ -7,9 +7,9 @@
     "dev": "next dev",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
-    "test": "jest",
-    "test:integration": "jest --runInBand tests/integration",
-    "test:watch": "jest --watchAll"
+    "test": "node --env-file=.env.development ./node_modules/.bin/jest",
+    "test:integration": "node --env-file=.env.development ./node_modules/.bin/jest --runInBand tests/integration",
+    "test:watch": "node --env-file=.env.development ./node_modules/.bin/jest --watchAll"
   },
   "author": "",
   "license": "MIT",
