@@ -4,7 +4,10 @@
   "description": "Um projeto de clone do tab news para aprender de fora a fora como criar um sistema igual ao tab news",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run services:up &&next dev",
+    "services:up": "docker compose -f infra/compose.yaml up -d",
+    "services:stop": "docker compose -f infra/compose.yaml stop",
+    "services:down": "docker compose -f infra/compose.yaml down",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
     "test": "node --env-file=.env.development ./node_modules/.bin/jest",
